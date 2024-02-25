@@ -8,7 +8,7 @@ export default function Contacts() {
         
         avatar: "https://loremflickr.com/640/360",
         twitter: "Twitter",
-        notes:   "Followers",
+        notes:   "Followers 17k",
         favorite: true,
       };
   return (
