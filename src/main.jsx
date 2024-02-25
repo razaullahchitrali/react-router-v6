@@ -1,17 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import "./index.css";
 import Home from "./component/home";
-
+import Root from "./routes/root";
+import Error from "./error";
+import Contacts from "./routes/contacts";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />
-  
+    path: "/root",
+    element: <Root/>,
+    errorElement:<Error/>,
   },
+
+  {
+    path:"/contacts",
+    element: <Contacts/>,
+ }
 
 ]);
 
